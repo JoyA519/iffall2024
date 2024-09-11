@@ -36,12 +36,18 @@ img {
     float: left;
     margin-top: 30px;
     margin-left: 30px;
-    width: 300px;
+    width: 41.5%;
 }
 @font-face {
     font-family: OCR_A;
     src: url("C:\Users\lpsca\OneDrive\Documents\College\Junior\iffall2024\resources\OCRAEXT.TTF");
 } 
+audio {
+    float: left;
+    clear:left;
+    margin-left: 28.5px;
+    margin-top: 30px;
+    width: 41.5%;
 html{
     background-image: url("https://64.media.tumblr.com/3259352620ae198c82e9a572b5e0cf5d/27951f289e49ce1f-47/s1280x1920/ddc28614979631832fda90f209e3cff1762d3401.pnj");
     background-repeat: no-repeat;
