@@ -1,0 +1,109 @@
+html {
+    font-family: "Raleway", sans-serif;
+    margin: 2rem 20% 8rem 20%;
+    background-image: url("../stars_bg.png");
+    background-color: rgb(54, 58, 118);
+    background-repeat: repeat-y;
+    background-size: 160%;
+    background-position-x: -270px;
+  }
+img {
+    float: right;
+    width: 120px;
+}
+section {
+    margin-top: 4rem;
+    background-color: rgb(1, 0, 5);
+    padding: 2rem 1rem 2rem 1rem;
+    border-radius: 2rem;
+    border-style: solid;
+    border-width: .4rem;
+    border-color: rgb(29, 27, 71);
+    
+}
+h1 {
+    font-size: 70pt;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: -1.4rem;
+}
+h2 {
+    font-size: 14pt;
+    line-height: .67cm;
+    margin-bottom: 3rem;
+    margin-left: 3.5rem;
+    font-weight: 500;
+}
+h3 {
+    font-size: 18pt;
+    margin-left: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 1.3rem;
+    color: #ffffff;
+    letter-spacing: .03rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+p {
+    font-size: 14pt;
+    margin-bottom: 1pt;
+    margin-left: 2.5rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+small{
+    margin-left: 3rem;
+    font-size: 11pt;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 70%;
+    color: #ffffff;
+}
+.border {
+    margin-top: 0rem;
+}
+.fontweight_regukar {
+    font-weight: 400;
+}
+.fontweight_semibold {
+    font-weight: 600;
+}
+.fontweight_bold {
+    font-weight: 700;
+}
+.fontstyle_normal {
+    font-style: normal;
+}
+.fontstyle_italic {
+    font-style: italic;
+}
+.fontstyle_oblique {
+    font-style: oblique;
+}
+.fontstyle_oblique {
+    font-style: oblique;
+}
+.letterspacing_normal {
+    letter-spacing: normal;
+}
+.letterspacing_tight {
+    letter-spacing: -.08rem;
+}
+.letterspacing_wide {
+    letter-spacing: .12rem;
+}
+.texttransform_capitalize {
+    text-transform: capitalize;
+}
+.texttransform_lowercase {
+    text-transform: lowercase;
+}
+.texttransform_uppercase {
+    text-transform: uppercase;
+}
+.textdecor_linethrough {
+    text-decoration: line-through;
+}
+.textdecor_overline {
+    text-decoration: overline;
+}
