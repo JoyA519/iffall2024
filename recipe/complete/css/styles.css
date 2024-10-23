@@ -1,0 +1,256 @@
+html {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+body {
+    margin: auto;
+    background-color: rgb(247, 224, 191);
+    letter-spacing: -.4px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    color:rgb(99, 66, 66)
+    }
+@media (min-width: 0px) {
+    div.sub{
+        padding-top: 20px;}
+    section > div {
+        width: 90%;
+        margin: auto;
+        }
+    section.description div img {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 0px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 20px;
+    } 
+    h3 {
+        padding-top: 50px;
+        padding-bottom: 20px;}
+    ul.list img {
+        width: 250px;
+        float: left;
+        padding-bottom: 15px;
+        margin:auto}
+    .list {  
+        padding: 0;
+        display: block;
+        list-style: none;
+    }
+    .list li {
+        width: 90%;
+        text-align: left;
+        margin: auto;
+        clear: both;
+    }
+    .list li div {
+        clear: both;
+        padding-bottom: 40px;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    }
+@media (min-width: 200) {
+    h1 {
+    font-size: 45px;
+    }
+    h2 {
+    font-size: 25px;
+    line-height: 20px;
+    }  
+}
+@media (min-width: 450px) {
+    section > div {
+            width: 80%;
+            margin: auto;
+            }
+    section.description div img {
+        width: 40%;
+        float: right;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        padding-top: 0px;
+            }
+    h1 {
+        font-size: 50px;
+        line-height: 0px;
+        }
+    h2 {
+        font-size: 30px;
+        line-height: 10px;
+        } 
+    ul.column {
+        columns: 2;
+    }
+    ul.list img {
+            width: 250px;
+            float: left;
+            padding-left: 0%;
+            padding-bottom: 15px;
+            margin:auto}
+    .list li {
+        width: 80%;}
+    }
+@media (min-width: 600px) {
+    section.description div img {
+        padding-bottom: 0px;
+            }
+    }
+@media (min-width: 700px) {
+    body {
+        background-image: url("../images/long.png"), url("../images/long2.png");
+        background-repeat: repeat-y;
+        background-size: 50px;
+        background-position: 2% 50px, 98% 50px;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 0px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 10px;
+    }  
+    div.sub{
+        padding-top: 30px;}
+    section.description div img {
+        width: 40%;
+        float: right;
+        padding-left: 5%;
+        padding-bottom: 0px;}
+    section.description div.d{
+        padding-top: 0px;}
+    body {
+        font-size: 18px;}
+    section.header > div h1 h2 {
+        width: 800px;
+        margin: auto;}
+    section > div {
+        width: 500px;}
+    h3 {
+        padding-top: 100px;
+        padding-bottom: 30px;}
+    section.description {
+        padding-top: 50px;}
+    ul.column {
+        column-count: 3;
+    }
+    ul.list img {
+        width: 200px;
+        float: left;
+        padding-right: 20px;
+        padding-left: 0px;
+        padding-bottom: 40px;}
+    li span {
+        display:inline-flex;
+        justify-content:center;
+        width:25px;
+        height:25px;
+        border-radius:50%;
+        background-color:rgb(86, 39, 39);
+        color:rgb(249, 235, 216);
+        float: left;
+      }
+    .list li div {
+        clear: none;
+    }
+    .list li {
+        width: 500px;}
+    }
+@media (min-width: 800px) {
+        section > div {
+            width: 600px;}
+        .list li {
+            width: 600px;}
+    }
+@media (min-width: 900px) {
+    section > div {
+        width: 600px;}
+    .list li {
+        width: 600px;}
+    .column {
+        column-count: 3;
+        margin-left: 50px;
+        }
+    }
+@media (min-width: 1000px) {
+        section > div {
+            width: 700px;}
+        .list li {
+            width: 700px;}
+        body {
+            background-image: url("../images/long.png"), url("../images/long2.png");
+            background-repeat: repeat-y;
+            background-size: 50px;
+            background-position: 5% 50px, 95% 50px;
+            }
+    }
+p {
+    margin: 0;
+}
+h3 {
+    font-size: 30px;
+    margin: 0px;
+    letter-spacing: 0px;
+    text-align: center;
+    }
+h3 {
+    color: rgb(185, 87, 108);
+}
+a {
+    color: rgb(185, 87, 108);
+}
+section.header {
+    background-color: rgb(185, 87, 108);
+}
+.description {
+    padding-bottom: 0px;
+}
+.header > div{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(249, 235, 216);
+    }
+.row {
+    align-items: center;
+}
+ul {
+    padding-top: 0px;
+    margin-top: 0px
+}
+div.sub{
+    font-size: 80%;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 17px;
+    color: rgb(99, 66, 66);
+}
+.Ingredients {
+    clear: both
+}
+li span {
+    display:inline-flex;
+    justify-content:center;
+    font-size: 18px;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-color:rgb(185, 87, 108);
+    color:rgb(249, 235, 216);
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+h3:nth-of-type(2) {
+padding-bottom: 30px;}
