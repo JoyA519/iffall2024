@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pokémon</title>
+        <link rel="stylesheet" href="https://use.typekit.net/wnk3moh.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".iconClick").click(function(){
+                    $(".iconClick").removeClass("active")
+                    $(this).addClass("active")})
+                })
+            $(document).ready(function() {
+                    $(".leader .leader_content").hide();
+                    $(".leader .leader_content:first-child").show();
+                    $('.leaderClick').click(function(event){
+                        index = $(this).index();
+                        $(".leader_content").hide();
+                        $(".leader_content").eq(index).show();
+                    })
+                })
+            $(document).ready(function() {
+                    $(".elite .elite_content").hide();
+                    $(".elite .elite_content:first-child").show();
+                    $('.eliteClick').click(function(event){
+                        index = $(this).index();
+                        $(".elite_content").hide();
+                        $(".elite_content").eq(index).show();
+                    })
+                })
+            $(document).ready(function() {
+                $(".groupClick").click(function(){
+                    $(".groupClick").removeClass("active")
+                    $(this).addClass("active")})
+                })
+            $(document).ready(function() {
+                $(".group .group_content").hide();
+                $(".group .group_content:first-child").show();
+                $('.groupClick').click(function(event){
+                    index = $(this).index();
+                    $(".group_content").hide();
+                    $(".group_content").eq(index).show();
+                })
+            })
+        </script>
+    </head>
+<body>
+    <header class="h">
+        <a href="index.html"><img src=".//images/sprites/logo.png" alt="pokemon logo"></a>
+    </header>
+    <nav id="Main_Nav">
+        <div id="center">
+            <div id="gen">
+                <img src=".//images/sprites/pb8.png" alt="pokeball">
+                <h1>Scarlet and Violet</h1>
+            </div>
+            <div id="Gen_Nav">
+                <ul id="Gen_Nav">
+                    <li><a href="index.html"><img src=".//images/sprites/Home.png" alt="Poké Ball" id="pokehome"></a></li>
+                    <li><a href="gen1.html">1</a></li>
+                    <li><a href="gen2.html">2</a></li>
+                    <li><a href="gen3.html">3</a></li>
+                    <li><a href="gen4.html">4</a></li>
+                    <li><a href="gen5.html">5</a></li>
+                    <li><a href="gen6.html">6</a></li>
+                    <li><a href="gen7.html">7</a></li>
+                    <li><a href="gen8.html">8</a></li>
+                    <li class="active"><a href="gen9.html">9</a></li>
+                    </ul>
+            </div>
+        </div>
+        </nav>
+    <section class="OV b">
+        <div>
+            <h2>Overview</h2>
+            <div class="red">
+            <ul>
+                <li><span id="Games">Games</span> Scarlet, Violet</li>
+                <li><span id="Region">Region</span> Paldea</li>
+                <li><span id="Console">Console</span> Nintendo Switch</li>
+                <li><span id="New_Pokemon">New Pokemon</span> 120</li>
+                <li><span id="Antagonist">Antagonist</span> Team Rocket</li>
+            </ul>
+            <img src=".//images/Gen9/locations/Paldea.png" alt="Paldea" id="mapB">
+            </div>
+        </div>
+    </section>
+    <section class="NF_ST">
+        <section class="NF b">
+            <div>
+                <h2>New Features</h2>
+                <div class="red">
+                <ul>
+                    <li>Terastallization</li>
+                    <li>Paradox Pokémon</li>
+                    <li>Auto Battle</li>
+                    <li>3 different story routes</li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section class="Starters">
+            <h3>Starters</h3>
+            <div id="S_Nav">
+                <div>
+                <span id="grass">Grass</span>
+                <span id="fire">Fire</span>
+                <span id="water">Water</span></div>
+            </div>
+            <div id="starters">
+                <ul>
+                    <li>
+                        <img src="./images/sprites/HOME0906.png" alt="Sprigatito">
+                        <span id="pokemon">Sprigatito</span>
+                        </li>
+                    <li>
+                        <img src="./images/sprites/HOME0909.png" alt="Fuecoco">
+                        <span id="pokemon">Fuecoco</span>
+                        </li>
+                    <li>
+                        <img src="./images/sprites/HOME0912.png" alt="Quaxly">
+                        <span id="pokemon">Quaxly</span>
+                        </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section class="characters">
+        <h3>Characters</h3>
+        <div id="characters">
+            <ul>
+                <li>
+                    <img>
+                    <div id="chara">
+                        Trainer: <br> Florian
+                        </div>
+                    </li>
+                <li>
+                    <img>
+                    <div id="chara">
+                        Trainer: <br> Juliana
+                        </div>
+                    </li>
+                <li>
+                    <img>
+                    <div id="chara">
+                        Rival: <br> Nemona
+                        </div>
+                    </li>
+                <li>
+                    <img>
+                    <div id="chara">
+                        Rival: <br> Arven
+                        </div>
+                    </li>
+                <li>
+                    <img>
+                    <div id="chara">
+                        Rival: <br> Rival
+                        </div>
+                    </li>
+                <li>
+                    <img>
+                    <div id="chara">
+                        Professor: <br> Sada
+                        </div>
+                    </li>
+                <li>
+                    <img>
+                    <div id="chara">
+                        Professor: <br> Tuo
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </section>
+    <section class="bar">
+        <span id="bar" id="GL" class="groupClick active GL">Gym Leaders</span> <span id="bar" id="EF" class="groupClick">Elite Four</span>
+        </section>
+<section class="group">
+        <section id="GL" class="group_content">
+                <div class="leader">
+                    <div class="leader_content bug">
+                        <div class="b city"><p id="subt">Cortondo</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen9/leaders/VSKaty.png" alt="Katy">
+                            <p><span id="subt">Katy</span>
+                                <br>
+                                The Sugarbug"
+                                <br>
+                                Bug
+                                <br>
+                                Bug Badge
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen9/leaders/Bug_Badge.png" alt="Bug Badge" id="badge">
+                            </div>
+                        </div>
+                    <div class="leader_content grass">
+                        <div class="b city"><p id="subt">Artazon</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen9/leaders/VSBrassius.png" alt="Brassius">
+                            <p><span id="subt">Brassius</span>
+                                <br>
+                                The Verdant Virtuoso
+                                <br>
+                                Grass type
+                                <br>
+                                Grass Badge
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen9/leaders/Grass_Badge.png" alt="Grass Badge" id="badge">
+                            </div>
+                        </div>
+                    <div class="leader_content electric">
+                        <div class="b city"><p id="subt">Levincia</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen9/leaders/VSIono.png" alt="Iono">
+                            <p><span id="subt">Iono</span>
+                                <br>
+                                The Supercharged Streamer
+                                <br>
+                                Electric type
+                                <br>
+                                Electric Badge
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen9/leaders/Electric_Badge.png" alt="Electric Badge" id="badge">
+                            </div>
+                        </div>            
+                    <div class="leader_content water">
+                        <div class="b city"><p id="subt">Cascarrafa</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen9/leaders/VSKofu.png" alt="Kofu">
+                            <p><span id="subt">Kofu</span>
+                                <br>
+                                The Surging Chef
+                                <br>
+                                Water type
+                                <br>
+                                Water Badge
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen9/leaders/Water_Badge.png" alt="Water Badge" id="badge">
+                            </div>
+                        </div>
+                    <div class="leader_content normal">
+                        <div class="b city"><p id="subt">Medali</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen9/leaders/VSLarry.png" alt="Larry">
+                            <p><span id="subt">Larry</span>
+                                <br>
+                                The Exceptional Everyman
+                                <br>
+                                Normal type
+                                <br>
+                                Normal Badge
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen9/leaders/Normal_Badge.png" alt="Normal Badge" id="badge">
+                            </div>
+                            </div>
+                    <div class="leader_content ghost">
+                        <div class="b city"><p id="subt">Montenevera</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen9/leaders/VSRyme.png" alt="Ryme">
+                            <p><span id="subt">Ryme</span>
+                                <br>
+                                The MC or RIP
+                                <br>
+                                Ghost type
+                                <br>
+                                Ghost Badge
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen9/leaders/Ghost_Badge.png" alt="Ghost Badge" id="badge">
+                            </div>
+                        </div>
+                    <div class="leader_content psychic">
+                        <div class="b city"><p id="subt">Alfornada City</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen9/leaders/VSTulip.png" alt="Tulip">
+                            <p><span id="subt">Tulip</span>
+                                <br>
+                                The Bewitching Beautician
+                                <br>
+                                Psychic type
+                                <br>
+                                Psychic Badge
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen9/leaders/Psychic_Badge.png" alt="Psychic Badge" id="badge">
+                            </div>
+                        </div>
+                    <div class="leader_content ice">
+                        <div class="b city"><p id="subt">Snowbelle City</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen9/leaders/VSGrusha.png" alt="Grusha">
+                            <p><span id="subt">Grusha</span>
+                                <br>
+                                The Sub-zero Shredder
+                                <br>
+                                Ice type
+                                <br>
+                                Ice Badge
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen9/leaders/Ice_Badge.png" alt="Ice Badge" id="badge">
+                            </div>
+                        </div>
+                    </div>            
+                <div id="icons">
+                    <ul>
+                        <li class="leaderClick icon8 iconbox"><img src=".//images/Gen9/leaders/Katy_icon.png" alt="Katy Icon" class="icon iconClick icon8 active"></li>
+                        <li class="leaderClick icon8 iconbox"><img src=".//images/Gen9/leaders/Brassius_icon.png" alt="Brassius Icon" class="icon iconClick icon8"></li>
+                        <li class="leaderClick icon8 iconbox"><img src=".//images/Gen9/leaders/Iono_icon.png" alt="Iono Icon" class="icon iconClick icon8"></li>
+                        <li class="leaderClick icon8 iconbox"><img src=".//images/Gen9/leaders/Kofu_icon.png" alt="Kofu Icon" class="icon iconClick icon8"></li>
+                        <li class="leaderClick icon8 iconbox"><img src=".//images/Gen9/leaders/Larry_icon.png" alt="Larry Icon" class="icon iconClick icon8"></li>
+                        <li class="leaderClick icon8 iconbox"><img src=".//images/Gen9/leaders/Ryme_icon.png" alt="Ryme Icon" class="icon iconClick icon8"></li>
+                        <li class="leaderClick icon8 iconbox"><img src=".//images/Gen9/leaders/Tulip_icon.png" alt="Tulip Icon" class="icon iconClick icon8"></li>
+                        <li class="leaderClick icon8 iconbox"><img src=".//images/Gen9/leaders/Grusha_icon.png" alt="Grusha Icon" class="icon iconClick icon8"></li>
+                        </ul>
+                    </div>
+            </section>
+        <section id="EF" class="group_content">
+                <div class="elite">
+                    <div class="elite_content desc b ground">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen9/elite/VSRika.png" alt="Rika">
+                            <p><span id="subt">Rika</span>
+                                <br>
+                                Ground type
+                            </div>
+                        </div>
+                    <div class="elite_content desc b steel">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen9/elite/VSPoppy.png" alt="Poppy">
+                            <p><span id="subt">Poppy</span>
+                                <br>
+                                Steel type
+                            </div>
+                        </div>
+                    <div class="elite_content desc b flying">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen9/elite/VSLarry.png" alt="Larry">
+                            <p><span id="subt">Larry</span>
+                                <br>
+                                Flying type
+                            </div>      
+                        </div>
+                    <div class="elite_content desc b dragon">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen9/elite/VSHassel.png" alt="Hassel">
+                            <p><span id="subt">Hassel</span>
+                                <br>
+                                Dragon type
+                            </div>
+                            </div>
+                    </div>            
+                <div id="icons">
+                    <ul>
+                        <li class="eliteClick icon8 iconbox"><img src=".//images/Gen9/elite/Rika_icon.png" alt="Rika Icon" class="icon iconClick icon8 active"></li>
+                        <li class="eliteClick icon8 iconbox"><img src=".//images/Gen9/elite/Poppy_icon.png" alt="Poppy Icon" class="icon iconClick icon8"></li>
+                        <li class="eliteClick icon8 iconbox"><img src=".//images/Gen9/elite/Larry_icon.png" alt="Larry Icon" class="icon iconClick icon8"></li>
+                        <li class="eliteClick icon8 iconbox"><img src=".//images/Gen9/elite/Hassel_icon.png" alt="Hassel Icon" class="icon iconClick icon8"></li>
+                    </div>
+            </section>
+    </section>
+    <section class="bar">
+            <span id="bar">Locations</span>
+            </section>
+    <section class="LC">
+            <div id="locations">
+                <ul>
+                    <li><img src=".//images/Gen9/locations/Cabo_Poco.png" alt="Map" id="map">
+                        <div id="city">Cabo Poco</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Los_Platos.png" alt="Map" id="map">
+                        <div id="city">Los Platos</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Mesagoza.png" alt="Map" id="map">
+                        <div id="city">Mesagoza</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Cortondo.png" alt="Map" id="map">
+                        <div id="city">Cortondo</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Alfornada.png" alt="Map" id="map">
+                        <div id="city">Alfornada</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Artazon.png" alt="Map" id="map">
+                        <div id="city">Artazon</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Levincia.png" alt="Map" id="map">
+                        <div id="city">Levincia</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Zapapico.png" alt="Map" id="map">
+                        <div id="city">Zapapico</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Cascarrafa.png" alt="Map" id="map">
+                        <div id="city">Cascarrafa</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Porto_Marinada.png" alt="Map" id="map">
+                        <div id="city">Porto Marinada</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Medali.png" alt="Map" id="map">
+                        <div id="city">Medali</div>
+                        </li>
+                    <li><img src=".//images/Gen9/locations/Montenevera.png" alt="Map" id="map">
+                        <div id="city">Montenevera</div>
+                </ul>
+            </div>
+            </section>
+</body>
+</html>

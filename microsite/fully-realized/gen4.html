@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="https://use.typekit.net/wnk3moh.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".iconClick").click(function(){
+                $(".iconClick").removeClass("active")
+                $(this).addClass("active")})
+            })
+        $(document).ready(function() {
+                $(".leader .leader_content").hide();
+                $(".leader .leader_content:first-child").show();
+                $('.leaderClick').click(function(event){
+                    index = $(this).index();
+                    $(".leader_content").hide();
+                    $(".leader_content").eq(index).show();
+                })
+            })
+        $(document).ready(function() {
+                $(".elite .elite_content").hide();
+                $(".elite .elite_content:first-child").show();
+                $('.eliteClick').click(function(event){
+                    index = $(this).index();
+                    $(".elite_content").hide();
+                    $(".elite_content").eq(index).show();
+                })
+            })
+        $(document).ready(function() {
+                $(".group .group_content").hide();
+                $(".group .group_content:first-child").show();
+                $('.groupClick').click(function(event){
+                    index = $(this).index();
+                    $(".group_content").hide();
+                    $(".group_content").eq(index).show();
+                })
+            })
+        $(document).ready(function() {
+                $(".groupClick").click(function(){
+                    $(".groupClick").removeClass("active")
+                    $(this).addClass("active")})
+                })
+    </script>
+</head>
+<body>
+    <header class="h">
+        <a href="index.html"><img src=".//images/sprites/logo.png" alt="pokemon logo"></a>
+    </header>
+    <nav id="Main_Nav">
+            <div id="center">
+                <div id="gen">
+                    <img src=".//images/sprites/pb4.png" alt="pokeball">
+                    <h1>Diamond and Pearl</h1>
+                </div>
+                <div id="Gen_Nav">
+                <ul id="Gen_Nav">
+                    <li><a href="index.html"><img src=".//images/sprites/Home.png" alt="Poké Ball" id="pokehome"></a></li>
+                    <li><a href="gen1.html">1</a></li>
+                    <li><a href="gen2.html">2</a></li>
+                    <li><a href="gen3.html">3</a></li>
+                    <li class="active"><a href="gen4.html">4</a></li>
+                    <li><a href="gen5.html">5</a></li>
+                    <li><a href="gen6.html">6</a></li>
+                    <li><a href="gen7.html">7</a></li>
+                    <li><a href="gen8.html">8</a></li>
+                    <li><a href="gen9.html">9</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="OV b">
+            <div>
+                <h2>Overview</h2>
+                <div class="red">
+                <ul>
+                    <li><span id="Games">Games</span> Diamond, Pearl, Platinum</li>
+                    <li><span id="Region">Region</span> Sinnoh</li>
+                    <li><span id="Console">Console</span> Nintendo DS</li>
+                    <li><span id="New_Pokemon">New Pokemon</span> 107</li>
+                    <li><span id="Antagonist">Antagonist</span> Team Galactic</li>
+                </ul>
+                <img src=".//images/Gen4/locations/Sinnoh.png" alt="Sinnoh" id="mapB">
+                </div>
+            </div>
+        </section>
+    <section class="NF_ST">
+        <section class="NF b">
+                <div>
+                    <h2>New Features</h2>
+                    <div class="red">
+                    <ul>
+                        <li>Afternoon and evening added to day/night cycle</li>
+                        <li>"Status" moves</li>
+                        <li>Pokétex &#40smartwatch&#41;</li>
+                        <li>Global Trade Station for trading Pokémon with others</li>
+                        <li>3 stage Pokémon Contests</li>
+                    </ul>
+                    </div>
+                </div>
+            </section>
+        <section class="Starters">
+            <h3>Starters</h3>
+            <div id="S_Nav">
+                <div>
+                <span id="grass">Grass</span>
+                <span id="fire">Fire</span>
+                <span id="water">Water</span></div>
+            </div>
+            <div id="starters">
+                <ul>
+                    <li>
+                        <img src="./images/sprites/Spr_4d_387.png" alt="Turtwig">
+                        <span id="pokemon">Turtwig</span>
+                        </li>
+                    <li>
+                        <img src="./images/sprites/Spr_4d_390.png" alt="Chimchar">
+                        <span id="pokemon">Chimchar</span>
+                        </li>
+                    <li>
+                        <img src="./images/sprites/Spr_4d_393.png" alt="Piplup">
+                        <span id="pokemon">Piplup</span>
+                        </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section class="characters">
+        <h3>Characters</h3>
+        <div id="characters">
+            <ul>
+                <li>
+                    <img src=".//images/Gen4/characters/Spr_DP_Lucas.png" alt="Lucas">
+                    <div id="chara">
+                        TBeaconer: <br> Lucas
+                        </div>
+                    </li>
+                <li>
+                    <img src=".//images/Gen4/characters/Spr_DP_Dawn.png" alt="Dawn">
+                    <div id="chara">
+                        TBeaconer: <br> Dawn
+                        </div>
+                    </li>
+                <li>
+                    <img src=".//images/Gen4/characters/Spr_DP_Barry.png" alt="Barry">
+                    <div id="chara">
+                        Rival: <br> Barry
+                        </div>
+                    </li>
+                <li>
+                    <img src=".//images/Gen4/characters/Spr_DP_Rowan.png" alt="Rowan">
+                    <div id="chara">
+                        Professor: <br> Rowan
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </section>
+    <section class="bar">
+        <span id="bar" id="GL" class="GL groupClick active">Gym Leaders</span> <span id="bar" id="EF" class="groupClick">Elite Four</span>
+        </section>
+    <section class="group">
+        <section id="GL" class="group_content">
+            <div class="leader">
+                <div class="leader_content rock">
+                    <div class="b city"><p id="subt">Oreburgh City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen4/leaders/Spr_DP_Roark.png" alt="Roark">
+                        <p><span id="subt">Roark</span>
+                            <br>
+                            Call me Roark the Rock!
+                            <br>
+                            Rock type
+                            <br>
+                            Coal Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen4/leaders/Coal_Badge.png" alt="Coal Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content grass">
+                    <div class="b city"><p id="subt">Eterna Town</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen4/leaders/Spr_DP_Gardenia.png" alt="Gardenia">
+                        <p><span id="subt">Gardenia</span>
+                            <br>
+                            Master of Vivid Plant Pokémon
+                            <br>
+                            Grass type
+                            <br>
+                            Forest Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen4/leaders/Forest_Badge.png" alt="Forest Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content electric">
+                    <div class="b city"><p id="subt">Veilstone City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen4/leaders/Spr_DP_Maylene.png" alt="Maylene">
+                        <p><span id="subt">Maylene</span>
+                            <br>
+                            The Barefoot Fighting Genius!
+                            <br>
+                            Electric type
+                            <br>
+                            Cobble Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen4/leaders/Cobble_Badge.png" alt="Cobble Badge" id="badge">
+                        </div>
+                    </div>            
+                <div class="leader_content water">
+                    <div class="b city"><p id="subt">Pastoria City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen4/leaders/Spr_DP_Crasher_Wake.png" alt="Crasher Wake">
+                        <p><span id="subt">Crasher Wake</span>
+                            <br>
+                            The Torrential Masked Master!
+                            <br>
+                            Water type
+                            <br>
+                            Fen Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen4/leaders/Fen_Badge.png" alt="Fen Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content normal">
+                    <div class="b city"><p id="subt">Hearthome City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen4/leaders/Spr_DP_Fantina.png" alt="Fantaina">
+                        <p><span id="subt">Fantina</span>
+                            <br>
+                            The Alluring, Soulful Dancer!
+                            <br>
+                            Normal type
+                            <br>
+                            Relic Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen4/leaders/Relic_Badge.png" alt="Relic Badge" id="badge">
+                        </div>
+                        </div>
+                <div class="leader_content steel">
+                    <div class="b city"><p id="subt">Canalave City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen4/leaders/Spr_DP_Byron.png" alt="Byron">
+                        <p><span id="subt">Byron</span>
+                            <br>
+                            The Man with the Steel Body!
+                            <br>
+                            Steel type
+                            <br>
+                            Mine Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen4/leaders/Mine_Badge.png" alt="Mine Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content ice">
+                    <div class="b city"><p id="subt">Snowpoint City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen4/leaders/Spr_DP_Candice.png" alt="Candice">
+                        <p><span id="subt">Candice</span>
+                            <br>
+                            The Diamond Dust Girl!
+                            <br>
+                            Ice type
+                            <br>
+                            Icicle Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen4/leaders/Icicle_Badge.png" alt="Icicle Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content electric">
+                    <div class="b city"><p id="subt">Blackthorn City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen4/leaders/Spr_DP_Volkner.png" alt="Volkner">
+                        <p><span id="subt">Volkner</span>
+                            <br>
+                            The Shining, Shocking Star
+                            <br>
+                            Electric type
+                            <br>
+                            Beacon Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen4/leaders/Beacon_Badge.png" alt="Beacon Badge" id="badge">
+                        </div>
+                    </div>
+                </div>
+            <div id="icons">
+                <ul>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen4/leaders/Roark_IV_OD.png" class="icon iconClick" class="icon" alt="Roark Icon" class="icon iconClick active"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen4/leaders/Gardenia_IV_OD.png" class="icon iconClick" class="icon iconClick" alt="Gardenia Icon" class="icon iconClick"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen4/leaders/Maylene_IV_OD.png" class="icon iconClick" class="icon iconClick" alt="Maylene Icon" class="icon iconClick"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen4/leaders/Crasher_Wake_IV_OD.png" class="icon iconClick" class="icon iconClick" alt="Crasher Wake Icon" class="icon iconClick"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen4/leaders/Fantina_IV_OD.png" class="icon iconClick" class="icon iconClick" alt="Fantina Icon" class="icon iconClick"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen4/leaders/Byron_IV_OD.png" class="icon iconClick" class="icon iconClick" alt="Byron Icon" class="icon iconClick"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen4/leaders/Candice_IV_OD.png" class="icon iconClick" class="icon iconClick" alt="Candice Icon" class="icon iconClick"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen4/leaders/Volkner_IV_OD.png" class="icon iconClick" class="icon iconClick" alt="Volkner Icon" class="icon iconClick"></li>
+                    </ul>
+                </div>
+        </section>
+        <section id="EF" class="group_content">
+            <div class="elite">
+                <div class="elite_content desc b bug">
+                    <div id="elite">
+                        <img src=".//images/Gen4/elite/Spr_DP_Aaron.png" alt="Aaron" id="sprite">
+                        <p><span id="subt">Aaron</span>
+                            <br>
+                            Bug type
+                        </div>
+                    </div>
+                <div class="elite_content desc b ground">
+                    <div id="elite">
+                        <img src=".//images/Gen4/elite/Spr_DP_Bertha.png" alt="Bertha" id="sprite">
+                        <p><span id="subt">Bertha</span>
+                            <br>
+                            Ground type
+                        </div>
+                    </div>
+                <div class="elite_content desc b fire">
+                    <div id="elite">
+                        <img src=".//images/Gen4/elite/Spr_DP_Flint.png" alt="Flint" id="sprite">
+                        <p><span id="subt">Flint</span>
+                            <br>
+                            Fire type
+                        </div>
+                    </div>
+                <div class="elite_content desc b psychic">
+                    <div id="elite">
+                        <img src=".//images/Gen4/elite/Spr_DP_Lucian.png" alt="Lucian" id="sprite">
+                        <p><span id="subt">Lucian</span>
+                            <br>
+                            Psychic type
+                        </div>
+                        </div>
+                </div>
+            <div id="icons">
+                <ul>
+                    <li class="eliteClick iconbox"><img src=".//images/Gen4/elite/Aaron_OD.png" alt="Aaron Icon" class="icon iconClick active"></li>
+                    <li class="eliteClick iconbox"><img src=".//images/Gen4/elite/Bertha_OD.png" alt="Bertha Icon" class="icon iconClick"></li>
+                    <li class="eliteClick iconbox"><img src=".//images/Gen4/elite/Flint_OD.png" alt="Flint Icon" class="icon iconClick"></li>
+                    <li class="eliteClick iconbox"><img src=".//images/Gen4/elite/Lucian_OD.png" alt="Lucian Icon" class="icon iconClick"></li>
+                </div>
+        </section>
+    </section>
+        <section class="bar">
+            <span id="bar">Locations</span>
+            </section>
+        <section class="LC">
+            <div id="locations">
+                <ul>
+                    <li><img src=".//images/Gen4/locations/Twinleaf_Town.png" alt="Map" id="map">
+                        <div id="city">Twinleaf Town</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Sandgem_Town.png" alt="Map" id="map">
+                        <div id="city">Sandgem Town</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Jubilife_City.png" alt="Map" id="map">
+                        <div id="city">Jubilife City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Oreburgh_City.png" alt="Map" id="map">
+                        <div id="city">Oreburgh City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Floaroma_Town.png" alt="Map" id="map">
+                        <div id="city">Floaroma Town</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Eterna_City.png" alt="Map" id="map">
+                        <div id="city">Eterna City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Hearthome_City.png" alt="Map" id="map">
+                        <div id="city">Hearthome City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Solaceon_Town.png" alt="Map" id="map">
+                        <div id="city">Solaceon Town</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Veilstone_City.png" alt="Map" id="map">
+                        <div id="city">VeilStone City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Pastoria_City.png" alt="Map" id="map">
+                        <div id="city">Pastoria City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Celestic_Town.png" alt="Map" id="map">
+                        <div id="city">Celestic Town</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Canalave_City.png" alt="Map" id="map">
+                        <div id="city">Canalave City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Snowpoint_City.png" alt="Map" id="map">
+                        <div id="city">Snowpoint City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Sunyshore_City.png" alt="Map" id="map">
+                        <div id="city">Sunyshore City</div>
+                        </li>
+                    <li><img src=".//images/Gen4/locations/Pokemon_League.png" alt="Map" id="map">
+                        <div id="city">Pokémon League</div>
+                        </li>
+                </ul>
+            </div>
+            </section>
+</body>
+</html>
