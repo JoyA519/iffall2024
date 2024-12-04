@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="https://use.typekit.net/wnk3moh.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".iconClick").click(function(){
+                $(".iconClick").removeClass("active")
+                $(this).addClass("active")})
+                })
+        $(document).ready(function() {
+            $(".leader .leader_content").hide();
+            $(".leader .leader_content:first-child").show();
+            $('.leaderClick').click(function(event){
+                    index = $(this).index();
+                    $(".leader_content").hide();
+                    $(".leader_content").eq(index).show();
+                    })
+                })
+            $(document).ready(function() {
+                $(".elite .elite_content").hide();
+                $(".elite .elite_content:first-child").show();
+                $('.eliteClick').click(function(event){
+                    index = $(this).index();
+                    $(".elite_content").hide();
+                    $(".elite_content").eq(index).show();
+                    })
+                })
+            $(document).ready(function() {
+                $(".group .group_content").hide();
+                $(".group .group_content:first-child").show();
+                $('.groupClick').click(function(event){
+                    index = $(this).index();
+                    $(".group_content").hide();
+                    $(".group_content").eq(index).show();
+                })
+            $(document).ready(function() {
+                $(".groupClick").click(function(){
+                    $(".groupClick").removeClass("active")
+                    $(this).addClass("active")})
+                    })
+                })
+    </script>
+</head>
+<body>
+    <header class="h">
+        <a href="index.html"><img src=".//images/sprites/logo.png" alt="pokemon logo"></a>
+    </header>
+    <nav id="Main_Nav">
+        <div id="center">
+                <div id="gen">
+                    <img src=".//images/sprites/pb6.png" alt="pokeball">
+                    <h1>X and Y</h1>
+                </div>
+                <div id="Gen_Nav">
+                    <ul id="Gen_Nav">
+                        <li><a href="index.html"><img src=".//images/sprites/Home.png" alt="Poké Ball" id="pokehome"></a></li>
+                        <li><a href="gen1.html">1</a></li>
+                        <li><a href="gen2.html">2</a></li>
+                        <li><a href="gen3.html">3</a></li>
+                        <li><a href="gen4.html">4</a></li>
+                        <li><a href="gen5.html">5</a></li>
+                        <li class="active"><a href="gen6.html">6</a></li>
+                        <li><a href="gen7.html">7</a></li>
+                        <li><a href="gen8.html">8</a></li>
+                        <li><a href="gen9.html">9</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+    <section class="OV b">
+        <div>
+            <h2>Overview</h2>
+            <div class="red">
+            <ul>
+                <li><span id="Games">Games</span> X, Y</li>
+                <li><span id="Region">Region</span> Kalos</li>
+                <li><span id="Console">Console</span> Nintendo 3DS</li>
+                <li><span id="New_Pokemon">New Pokemon</span> 72</li>
+                <li><span id="Antagonist">Antagonist</span> Team Flare</li>
+            </ul>
+            <img src=".//images/Gen6/locations/Kalos.png" alt="Kalos" id="mapB">
+            </div>
+        </div>
+    </section>
+    <section class="NF_ST">
+        <section class="NF b">
+            <div>
+                <h2>New Features</h2>
+                <div class="red">
+                <ul>
+                    <li>3D graphics</li>
+                    <li>Fairy Type</li>
+                    <li>Mega Evolution</li>
+                    <li>Trainor customization</li>
+                    <li>Super Training</li>
+                    <li>Sky Battles, Horde Encounters, and Inverse Battle</li>
+                    <li>Pokémon Bank compatibility</li>
+                    <li>Battle Maison</li>
+                </ul>
+                </div>
+            </div>
+            </section>
+        <section class="Starters">
+            <h3>Starters</h3>
+            <div id="S_Nav">
+            <div>
+                <span id="grass">Grass</span>
+                <span id="fire">Fire</span>
+                <span id="water">Water</span></div>
+            </div>
+            <div id="starters">
+                <ul>
+                    <li>
+                        <img src="./images/sprites/Spr_6x_650.png" alt="Chespin">
+                        <span id="pokemon">Chespin</span>
+                        </li>
+                    <li>
+                        <img src="./images/sprites/Spr_6x_653.png" alt="Fennekin">
+                        <span id="pokemon">Fennekin</span>
+                        </li>
+                    <li>
+                        <img src="./images/sprites/Spr_6x_656.png" alt="Froakie">
+                        <span id="pokemon">Froakie</span>
+                        </li>
+                </ul>
+            </div>
+            </section>
+    </section>
+    <section class="characters">
+        <h3>Characters</h3>
+        <div id="characters">
+            <ul>
+                <li>
+                    <img id="cspr" src=".//images/Gen6/characters/Spr_XY_Calem.png" alt="Calem">
+                    <div id="chara">
+                        Trainer/Rival: <br> Calem
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen6/characters/Spr_XY_Serena.png" alt="Serena">
+                    <div id="chara">
+                        Trainer/Rival: <br> Serena
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen6/characters/Spr_XY_Shauna.png" alt="Shauna">
+                    <div id="chara">
+                        Rival: <br> Shauna
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen6/characters/Spr_XY_Tierno.png" alt="Tierno">
+                    <div id="chara">
+                        Rival: <br> Tierno
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen6/characters/Spr_XY_Trevor.png" alt="Trevor">
+                    <div id="chara">
+                        Rival: <br> Trevor
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen6/characters/Spr_XY_Sycamor.png" alt="Sycamore">
+                    <div id="chara">
+                        Professor: <br> Sycamore
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </section>
+    <section class="bar">
+        <span id="bar" id="GL" class="GL groupClick active">Gym Leaders</span>
+        <span id="bar" id="EF" class="groupClick">Elite Four</span>
+        </section>
+    <section class="group">
+        <section id="GL" class="group_content">
+            <div class="leader">
+                <div class="leader_content bug">
+                    <div class="b city"><p id="subt">Santalune City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen6/leaders/Spr_XY_Viola.png" alt="Viola">
+                        <p><span id="subt">Viola</span>
+                            <br><br>
+                            The camerawoman who never lets a single smile escape her focus.
+                            <br><br>
+                            Bug
+                            <br><br>
+                            Bug Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen6/leaders/Bug_Badge.png" alt="Bug Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content rock">
+                    <div class="b city"><p id="subt">Cyllage City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen6/leaders/Spr_XY_Grant.png" alt="Grant">
+                        <p><span id="subt">Grant</span>
+                            <br><br>
+                            The wild, yet cool and collected, rock climber.
+                            <br><br>
+                            Rock type
+                            <br><br>
+                            Cliff Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen6/leaders/Cliff_Badge.png" alt="Cliff Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content fighting">
+                    <div class="b city"><p id="subt">Shalour City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen6/leaders/Spr_XY_Korrina.png" alt="Korrina">
+                        <p><span id="subt">Korrina</span>
+                            <br><br>
+                            Premier Rumble Artist
+                            <br><br>
+                            Fighting type
+                            <br><br>
+                            Rumble Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen6/leaders/Rumble_Badge.png" alt="Rumble Badge" id="badge">
+                        </div>
+                    </div>            
+                <div class="leader_content grass">
+                    <div class="b city"><p id="subt">Coumarine City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen6/leaders/Spr_XY_Ramos.png" alt="Ramos">
+                        <p><span id="subt">Ramos</span>
+                            <br><br>
+                            The old growth is still in bloom!
+                            <br><br>
+                            Grass type
+                            <br><br>
+                            Plant Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen6/leaders/Plant_Badge.png" alt="Plant Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content electric">
+                    <div class="b city"><p id="subt">Lumiose City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen6/leaders/Spr_XY_Clemont.png" alt="Siebold">
+                        <p><span id="subt">Siebold</span>
+                            <br><br>
+                            The inventor lighting up the world.
+                            <br><br>
+                            Electric type
+                            <br><br>
+                            Voltage Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen6/leaders/Voltage_Badge.png" alt="Voltage Badge" id="badge">
+                        </div>
+                        </div>
+                <div class="leader_content fairy">
+                    <div class="b city"><p id="subt">Laverne City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen6/leaders/Spr_XY_Valerie.png" alt="Valerie">
+                        <p><span id="subt">Valerie</span>
+                            <br><br>
+                            The maiden from a land with history.
+                            <br><br>
+                            Fairy type
+                            <br><br>
+                            Fairy Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen6/leaders/Fairy_Badge.png" alt="Fairy Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content psychic">
+                    <div class="b city"><p id="subt">Anister City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen6/leaders/Spr_XY_Olympia.png" alt="Olympia">
+                        <p><span id="subt">Olympia</span>
+                            <br><br>
+                            The person who makes paths with starlight.
+                            <br><br>
+                            Psychic type
+                            <br><br>
+                            Psychic Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen6/leaders/Psychic_Badge.png" alt="Psychic Badge" id="badge">
+                        </div>
+                    </div>
+                <div class="leader_content ice">
+                    <div class="b city"><p id="subt">Snowbelle City</p></div>
+                    <div class="b desc">
+                        <img id="sprite" src=".//images/Gen6/leaders/Spr_XY_Wulfric.png" alt="Wulfric">
+                        <p><span id="subt">Wulfric</span>
+                            <br><br>
+                            Tough as an iceberg, hot as a furnace.
+                            <br><br>
+                            Ice type
+                            <br><br>
+                            Iceberg Badge
+                            </p>
+                            </div>
+                        <div>
+                        <img src=".//images/Gen6/leaders/Iceberg_Badge.png" alt="Iceberg Badge" id="badge">
+                        </div>
+                    </div>
+                </div>        
+            <div id="icons">
+                <ul>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen6/leaders/Viola_OD.png" alt="Viola Icon" class="icon iconClick icon7 active"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen6/leaders/Grant_OD.png" alt="Grant Icon" class="icon iconClick icon7"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen6/leaders/Korrina_OD.png" alt="Korrina Icon" class="icon iconClick icon7"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen6/leaders/Ramos_OD.png" alt="Ramos Icon" class="icon iconClick icon7"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen6/leaders/Clemont_OD.png" alt="Clemont Icon" class="icon iconClick icon7"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen6/leaders/Valerie_OD.png" alt="Valerie Icon" class="icon iconClick icon7"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen6/leaders/Olympia_OD.png" alt="Olympia Icon" class="icon iconClick icon7"></li>
+                    <li class="leaderClick iconbox"><img src=".//images/Gen6/leaders/Wulfric_OD.png" alt="Wulfric Icon" class="icon iconClick icon7"></li>
+                    </ul>
+                </div>
+        </section>
+        <section id="EF" class="group_content">
+                <div class="elite">
+                    <div class="elite_content desc b fire">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen6/elite/Spr_XY_Malva.png" alt="Malva">
+                            <p><span id="subt">Malva</span>
+                                <br><br>
+                                Fire type
+                            </div>
+                        </div>
+                    <div class="elite_content desc b water">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen6/elite/Spr_XY_Siebold.png" alt="Siebold">
+                            <p><span id="subt">Siebold</span>
+                                <br><br>
+                                Water type
+                            </div>
+                        </div>
+                    <div class="elite_content desc b steel">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen6/elite/Spr_XY_Wikstrom.png" alt="Wikstrom">
+                            <p><span id="subt">Wikstrom</span>
+                                <br><br>
+                                Steel type
+                            </div>
+                        </div>
+                    <div class="elite_content desc b dragon">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen6/elite/Spr_XY_Drasna.png" alt="Drasna">
+                            <p><span id="subt">Drasna</span>
+                                <br><br>
+                                Dragon type
+                            </div>
+                            </div>
+                    </div>                
+                <div id="icons">
+                    <ul>
+                        <li class="eliteClick iconbox"><img src=".//images/Gen6/elite/Malva_OD.png" alt="Malva Icon" class="icon iconClick active icon7"></li>
+                        <li class="eliteClick iconbox"><img src=".//images/Gen6/elite/Siebold_OD.png" alt="Siebold Icon" class="icon iconClick icon7"></li>
+                        <li class="eliteClick iconbox"><img src=".//images/Gen6/elite/Wikstrom_OD.png" alt="Wikstrom Icon" class="icon iconClick icon7"></li>
+                        <li class="eliteClick iconbox"><img src=".//images/Gen6/elite/Drasna_OD.png" alt="Drasna Icon" class="icon iconClick icon7"></li>
+                    </div>
+            </section>
+    </section>
+    <section class="bar">
+            <span id="bar">Locations</span>
+            </section>
+    <section class="LC">
+            <div id="locations">
+                <ul>
+                    <li><img src=".//images/Gen6/locations/Vaniville_Town.png" alt="Map" id="map8">
+                        <div id="city">Vaniville Town</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Aquacorde_Town.png" alt="Map" id="map8">
+                        <div id="city">Aquacorde Town</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Santalune_City.png" alt="Map" id="map8">
+                        <div id="city">Santalune City</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Lumiose_City.png" alt="Map" id="map8">
+                        <div id="city">Luminose City</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Camphrier_Town.png" alt="Map" id="map8">
+                        <div id="city">Camphrier Town</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Cyllage_City.png" alt="Map" id="map8">
+                        <div id="city">Cyllage City</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Ambrette_Town.png" alt="Map" id="map8">
+                        <div id="city">Ambrette Town</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Geosenge_Town.png" alt="Map" id="map8">
+                        <div id="city">Geosenge Town</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Shalour_City.png" alt="Map" id="map8">
+                        <div id="city">Shalour City</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Coumarine_City.png" alt="Map" id="map8">
+                        <div id="city">Coumarine City</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Pokémon_League.png" alt="Map" id="map8">
+                        <div id="city">Pokémon League</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Laverre_City.png" alt="Map" id="map8">
+                        <div id="city">Laverre City</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Snowbelle_City.png" alt="Map" id="map8">
+                        <div id="city">Snowbelle City</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Dendemille_Town.png" alt="Map" id="map8">
+                        <div id="city">Dendemille Town</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Anistar_City.png" alt="Map" id="map8">
+                        <div id="city">Anistar City</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Couriway_Town.png" alt="Map" id="map8">
+                        <div id="city">Couriway Town</div>
+                        </li>
+                    <li><img src=".//images/Gen6/locations/Kiloude_City.png" alt="Map" id="map8">
+                        <div id="city">Kiloude City</div>
+                </ul>
+            </div>
+            </section>
+</body>
+<footer>
+    <div>
+    <ul class="home">
+        <li><a href="index.html">H</a></li>
+        <li><a href="gen1.html">1</a></li>
+        <li><a href="gen2.html">2</a></li>
+        <li><a href="gen3.html">3</a></li>
+        <li><a href="gen4.html">4</a></li>
+        <li><a href="gen5.html">5</a></li>
+        <li class="active"><a href="gen6.html">6</a></li>
+        <li><a href="gen7.html">7</a></li>
+        <li><a href="gen8.html">8</a></li>
+        <li><a href="gen9.html">9</a></li>
+        </ul>
+    </div>
+    <div class="home credits">
+        <p>Information sourced from <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon">Pokemon</a></p>
+        <p>Images sourced from <a href="https://bulbagarden.net/home/">Bulpapedia</a></p>
+        <p>Website created by Joy Ani</p>
+        <p>Creative Director Annie Kim</p>
+        </info>
+    </div>
+    </footer>
+</html>

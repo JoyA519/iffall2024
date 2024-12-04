@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pokémon</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/wnk3moh.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Rancho&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <script>
+                    $(document).ready(function() {
+                    $(".btnclick").click(function(){
+                        $(".btnclick").removeClass("active")
+                        $(this).addClass("active")})
+                    
+
+                    })
+                    /*https://www.youtube.com/watch?v=rpjaQh5ir8w*/
+                    $(document).ready(function() {
+                        $(".des .des_content").hide();
+                        $(".des .des_content:first-child").show();
+                        $('.btnclick').click(function(event){
+                            index = $(this).index();
+                            $(".des_content").hide();
+                            $(".des_content").eq(index).show();
+                        })
+
+                    })
+        </script>
+    </head>
+<body id="home" class="gradient">
+    <header class="hh">
+        <a href="index.html"><img src=".//images/sprites/logo.png" alt="pokemon logo"></a>
+    </header>
+    <nav class="home_nav">
+        <div class="home_nav" >
+        <div id="home_nav" class="hnavhome">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="gen1.html">Gen 1</a></li>
+            <li><a href="gen2.html">Gen 2</a></li>
+            <li><a href="gen3.html">Gen 3</a></li>
+            <li><a href="gen4.html">Gen 4</a></li>
+            <li><a href="gen5.html">Gen 5</a></li>
+            <li><a href="gen6.html">Gen 6</a></li>
+            <li><a href="gen7.html">Gen 7</a></li>
+            <li><a href="gen8.html">Gen 8</a></li>
+            <li><a href="gen9.html">Gen 9</a></li>
+            </ul>
+        </div>
+        <div class="gnavhome">
+            <ul class="home">
+                <li class="active"><a href="index.html">H</a></li>
+                <li><a href="gen1.html">1</a></li>
+                <li><a href="gen2.html">2</a></li>
+                <li><a href="gen3.html">3</a></li>
+                <li><a href="gen4.html">4</a></li>
+                <li><a href="gen5.html">5</a></li>
+                <li><a href="gen6.html">6</a></li>
+                <li><a href="gen7.html">7</a></li>
+                <li><a href="gen8.html">8</a></li>
+                <li><a href="gen9.html">9</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+    <section class="content_box b">
+        <div class="WIP">
+            <h1>What is Pokemon?</h1>
+                <div>
+                <p>Pokemon (Pocket Monsters) is a Japanese media franchise set in a world where humans and creatures, called Pokemon, coexist. It originated as a pair of role-playing games developed by Game Freak and founded by Satoshi Tajiri on the Gameboy in Febuary 27 in 1996, but expanded to include trading cards, anime, movies, and more. All other mainline games are also released 
+                <br>
+                <br>
+                The original games contained 151 species of Pokemon, but since each generation introduced more species, there are now  1,025 species as of January 2025. 
+                <br> 
+                <br>
+                Pokémon video games have been released in a wide variety of genres. The role-playing games(RPGs) developed by Game Freak are considered the core series of the franchise. Various spin-off games also exist, such as Pokemon Mystery Dungeon , a roguelike series, Pokémon Ranger, an action RPG series, and Detective Pikachu (2018), an adventure game.
+                </p>
+                </div>
+        </div>
+    </section>
+        <div class="bottoms">
+        <section class="GP content_box b ">
+            <h2>Gameplay</h2>
+            <div class="redtop">
+                    <div>
+                    <p>In each mainline game, the player takes the role of a Pokémon Trainer with 3 main goals: 
+                        <ol>
+                            <li>Travel and explore the Pokémon world</li>
+                            <li>Discover and catch each Pokemon species in order to compltete their Pokédex</li>
+                            <li>Train a team of up to six Pokemon at a time and have them engage in battles</li>
+                        </ol>
+                        </p>
+                    <br>
+                    <p>Trainer's pokemon can engage in battles against opposing pokemon and use items to their advantage. Pokemon faint upon being defeated, and can then be rejuvenated at a Poké Center.
+                    <br>
+                    <br>
+                    Pokemon can be leveled up in gyms. Players can also earn gym badges by wining against gym leaders. Collecting 8 badges allows players into the Pokémon League, where they can fight the elite four.
+                        </p>
+                    <img src="./images/sprites/Pokémon_FireRed_first_battle.png" alt="pokemon battle gen 4" id="battle">
+                    </div>
+            </div>
+        
+            </section>
+        <div>
+                <section class="Gen content_box b ">
+                    <h2>Generations</h2>
+                    <div class="redtop">
+                            <div>
+                            <p>The mainline games are released in generations, each with different pokemon, storylines, and characters. These are all additions to the Pokémon world. 
+                            <br>
+                            <br>
+                            Each generation introduces:
+                                <ul>
+                                    <li>Starter pokemon (<span id="red">grass</span>, <span id="blue">fire</span>, <span id="green">water</span>) for the player to choose from</li>
+                                    <li>A rival character who acts as a roadblock or boss opponent throughout the game</li>
+                                    <li>Antagonists to defeat, usually a criminal organization</li>
+                                    <li>New regions, towns, cities, and gyms</li>
+                                    <li>Unique game mechanics</li>
+                                    <li>New region specific Gyms</li>
+                                    <li>An Elite four, who are the best of the best</li>
+                                </ul>
+                                </p>
+                            </div>
+                    </div>
+                </section>
+                <section class="EEI">
+                    <div>
+                        <div class="bbar">
+                            <button class="btn btnclick  active">Types</button>
+                            <button class="btn btnclick">Evolution</button>
+                            <button class="btn btnclick">Items</button>
+                        </div>
+                    </div>
+                    <div class="des">
+                        <div class="b des_content" >
+                            <p>
+                                A Pokémon's type is an elemental attribute determining the strengths and weaknesses of each Pokémon and the moves its able to do. Some Pokemon are dual types, meaning they have two different elements.There are currently 18 different elements.
+                            </p>
+                            <img src=".//images/sprites/types.png" alt="type list">
+                        </div >
+                        <div class="b des_content">
+                            <p>
+                                Pokemon have the ability to transform  into stronger forms through evolution. Most Pokémon will evolve at a certain level, while others evolve through different means, such as exposure to a certain item. Pokemon can evolve once or twice, though some species don’t evolve at all. 
+                            </p>
+                            <img src=".//images/sprites/evolution.png" alt="pikachu evolution line">
+                        </div>
+                        <div class="b des_content">
+                            <p>
+                                Most Pokemon can be caught with spherical devices known as Pokeballs. There a variety of Pokeballs that exist, each with different stats and varying success rates.
+                            </p>
+                            <img src=".//images/sprites/pokeballs.png" alt="pokeballs">
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>   
+    </body>
+<footer>
+    <div>
+    <ul class="home">
+        <li class="active"><a href="index.html">H</a></li>
+        <li><a href="gen1.html">1</a></li>
+        <li><a href="gen2.html">2</a></li>
+        <li><a href="gen3.html">3</a></li>
+        <li><a href="gen4.html">4</a></li>
+        <li><a href="gen5.html">5</a></li>
+        <li><a href="gen6.html">6</a></li>
+        <li><a href="gen7.html">7</a></li>
+        <li><a href="gen8.html">8</a></li>
+        <li><a href="gen9.html">9</a></li>
+        </ul>
+    </div>
+    <div class="home credits">
+        <p>Information sourced from <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon">Pokemon</a></p>
+        <p>Images sourced from <a href="https://bulbagarden.net/home/">Bulpapedia</a></p>
+        <p>Website created by Joy Ani</p>
+        <p>Creative Director Annie Kim</p>
+        </info>
+    </div>
+    </footer>
+</html>

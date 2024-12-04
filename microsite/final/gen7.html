@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pokémon</title>
+        <link rel="stylesheet" href="https://use.typekit.net/wnk3moh.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".iconClick").click(function(){
+                    $(".iconClick").removeClass("active")
+                    $(this).addClass("active")})
+                })
+            $(document).ready(function() {
+                    $(".captain .captain_content").hide();
+                    $(".captain .captain_content:first-child").show();
+                    $('.captainClick').click(function(event){
+                        index = $(this).index();
+                        $(".captain_content").hide();
+                        $(".captain_content").eq(index).show();
+                    })
+                })
+            $(document).ready(function() {
+                $(".kahuna .kahuna_content").hide();
+                $(".kahuna .kahuna_content:first-child").show();
+                $('.kahunaClick').click(function(event){
+                    index = $(this).index();
+                    $(".kahuna_content").hide();
+                    $(".kahuna_content").eq(index).show();
+                })
+            })
+            $(document).ready(function() {
+                    $(".elite .elite_content").hide();
+                    $(".elite .elite_content:first-child").show();
+                    $('.eliteClick').click(function(event){
+                        index = $(this).index();
+                        $(".elite_content").hide();
+                        $(".elite_content").eq(index).show();
+                    })
+            })
+            $(document).ready(function() {
+                $(".group .group_content").hide();
+                $(".group .group_content:first-child").show();
+                $('.groupClick').click(function(event){
+                    index = $(this).index();
+                    $(".group_content").hide();
+                    $(".group_content").eq(index).show();
+                })
+            $(document).ready(function() {
+                $(".groupClick").click(function(){
+                    $(".groupClick").removeClass("active")
+                    $(this).addClass("active")})
+                    })
+                })
+        </script>
+    </head>
+<body>
+    <header class="h">
+        <a href="index.html"><img src=".//images/sprites/logo.png" alt="pokemon logo"></a>
+    </header>
+    <nav id="Main_Nav">
+        <div id="center">
+            <div id="gen">
+                <img src=".//images/sprites/pb7.png" alt="pokeball">
+                <h1>Sun and Moon</h1>
+                </div>
+            <div id="Gen_Nav">
+            <ul id="Gen_Nav">
+                <li><a href="index.html"><img src=".//images/sprites/Home.png" alt="Poké Ball" id="pokehome"></a></li>
+                <li><a href="gen1.html">1</a></li>
+                <li><a href="gen2.html">2</a></li>
+                <li><a href="gen3.html">3</a></li>
+                <li><a href="gen4.html">4</a></li>
+                <li><a href="gen5.html">5</a></li>
+                <li><a href="gen6.html">6</a></li>
+                <li class="active"><a href="gen7.html">7</a></li>
+                <li><a href="gen8.html">8</a></li>
+                <li><a href="gen9.html">9</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    <section class="OV b">
+        <div>
+            <h2>Overview</h2>
+            <div class="red">
+            <ul>
+                <li><span id="Games">Games</span> Sun, Moon, Ultra Sun, Ultra Moon</li>
+                <li><span id="Region">Region</span> Alola</li>
+                <li><span id="Console">Console</span> Gameboy, 3DS</li>
+                <li><span id="New_Pokemon">New Pokemon</span> 88</li>
+                <li><span id="Antagonist">Antagonist</span> Aether Foundation</li>
+            </ul>
+            <img src=".//images/Gen7/locations/Alola.png" alt="Alola" id="mapB">
+            </div>
+        </div>
+    </section>
+    <section class="NF_ST">
+        <section class="NF b">
+            <div>
+                <h2>New Features</h2>
+                <div class="red">
+                <ul>
+                    <li>Alolan forms</li>
+                    <li>Trials</li>
+                    <li>Z-moves</li>
+                    <li>Poké Pelago</li>
+                    <li>Festival Plaza</li>
+                    <li>Mid-generation</li>
+                    <li>Ultra Beasts</li>
+                    <li>Battle Tree</li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section class="Starters">
+            <h3>Starters</h3>
+            <div id="S_Nav">
+                <div>
+                <span id="grass">Grass</span>
+                <span id="fire">Fire</span>
+                <span id="water">Water</span></div>
+            </div>
+            <div id="starters">
+                <ul>
+                    <li>
+                        <img src="./images/sprites/Spr_7s_722.png" alt="Rowlet">
+                        <span id="pokemon">Rowlet</span>
+                        </li>
+                    <li>
+                        <img src="./images/sprites/Spr_7s_725.png" alt="Litten">
+                        <span id="pokemon">Litten</span>
+                        </li>
+                    <li>
+                        <img src="./images/sprites/Spr_7s_728.png" alt="Popplio">
+                        <span id="pokemon">Popplio</span>
+                        </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section class="characters">
+        <h3>Characters</h3>
+        <div id="characters">
+            <ul>
+                <li>
+                    <img id="cspr" src=".//images/Gen7/characters/Spri_SM_Elio.png" alt="Elio">
+                    <div id="chara">
+                        Trainer: <br> Elio
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen7/characters/Spr_SM_Selene.png" alt="Selene">
+                    <div id="chara">
+                        Trainer: <br> Selene
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen7/characters/Spr_SM_Hau.png" alt="Hau">
+                    <div id="chara">
+                        Rival: <br> Hau
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen7/characters/Spr_SM_Gladion.png" alt="Gladion">
+                    <div id="chara">
+                        Rival: <br> Gladion
+                        </div>
+                    </li>
+                <li>
+                    <img id="cspr" src=".//images/Gen7/characters/Spr_SM_Kukui.png" alt="Kukui">
+                    <div id="chara">
+                        Professor: <br> Kukui
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </section>
+    <section class="bar">
+        <span id="bar" id="IC" class="G8 active groupClick active">Island Captains</span>
+        <span id="bar" id="IK" class="G8 groupClick">Island Kahunas</span >
+        <span id="bar" id="EF" class="groupClick">Elite Four</span>
+        </section>
+    <section class="group">
+        <section id="IC" class="group_content">
+                <div class="captain">
+                    <div class="captain_content normal">
+                        <div class="b city"><p id="subt">Melemele Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Ilima.png" alt="Ilima">
+                            <p><span id="subt">Ilima</span>
+                                <br><br>
+                                Verdant Cavern
+                                <br><br>
+                                Normal type
+                            </div>
+                        </div>
+                    <div class="captain_content water">
+                        <div class="b city"><p id="subt">Akala Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Lana.png" alt="Lana">
+                            <p><span id="subt">Lana</span>
+                                <br><br>
+                                Brooklet Hill
+                                <br><br>
+                                Water type
+                            </div>
+                        </div>
+                    <div class="captain_content fire">
+                        <div class="b city"><p id="subt">Akala Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Kiawe.png" alt="Kiawe">
+                            <p><span id="subt">Kiawe</span>
+                                <br><br>
+                                Wela Volcano Park
+                                <br><br>
+                                Fire type
+                            </div>
+                        </div>            
+                    <div class="captain_content grass">
+                        <div class="b city"><p id="subt">Akala Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Mallow.png" alt="Mallow">
+                            <p><span id="subt">Mallow</span>
+                                <br><br>
+                                Lush Jungle
+                                <br><br>
+                                Grass type
+                            </div>
+                        </div>
+                    <div class="captain_content electric">
+                        <div class="b city"><p id="subt">Ula'ula Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Sophocles.png" alt="Sophocles">
+                            <p><span id="subt">Sophocles</span>
+                                <br><br>
+                                Hokulani Observatory
+                                <br><br>
+                                Electric type
+                            </div>
+                            </div>
+                    <div class="captain_content ghost">
+                        <div class="b city"><p id="subt">Ula'ula Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Acerola.png" alt="Acerola">
+                            <p><span id="subt">Acerola</span>
+                                <br><br>
+                                Thrifty Megamart &#40Abandonded Site&#41
+                                <br><br>
+                                Ghost type
+                            </div>
+                        </div>
+                    <div class="captain_content fairy">
+                        <div class="b city"><p id="subt">Poni Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Mina.png" alt="Mina">
+                            <p><span id="subt">Mina</span>
+                                <br><br>
+                                Seafolk Village
+                                <br><br>
+                                Fairy type
+                            </div>
+                        </div>
+                    </div>                
+                <div id="icons">
+                    <ul>
+                        <li class="captainClick iconbox"><img src=".//images/Gen7/leaders/VSIlima.png" alt="Ilima Icon" class="icon iconClick icon7 active"></li>
+                        <li class="captainClick iconbox"><img src=".//images/Gen7/leaders/VSLana.png" alt="Lana Icon" class="icon iconClick icon7"></li>
+                        <li class="captainClick iconbox"><img src=".//images/Gen7/leaders/VSKiawe.png" alt="Kiawe Icon" class="icon iconClick icon7"></li>
+                        <li class="captainClick iconbox"><img src=".//images/Gen7/leaders/VSMallow.png" alt="Mallow Icon" class="icon iconClick icon7"></li>
+                        <li class="captainClick iconbox"><img src=".//images/Gen7/leaders/VSSophocles.png" alt="Sophocles Icon" class="icon iconClick icon7"></li>
+                        <li class="captainClick iconbox"><img src=".//images/Gen7/leaders/VSAcerola.png" alt="Acerola Icon" class="icon iconClick icon7"></li>
+                        <li class="captainClick iconbox"><img src=".//images/Gen7/leaders/VSMina.png" alt="Mina Icon" class="icon iconClick icon7">
+                        </ul>
+                    </div>
+            </section>
+        <section id="IK" class="group_content">
+                <div class="kahuna">
+                    <div class="kahuna_content fighting">
+                        <div class="b city"><p id="subt">Melemele Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Hala.png" alt="Hala">
+                            <p><span id="subt">Hala</span>
+                                <br><br>
+                                Fighting
+                                <br><br>
+                                Melemele Island Trial Stamp
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen7/leaders/Melemele_badge.png" alt="Melemele Badge" id="badge">
+                            </div>
+                        </div>
+                    <div class="kahuna_content rock">
+                        <div class="b city"><p id="subt">Akala Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Olivia.png" alt="Olivia">
+                            <p><span id="subt">Olivia</span>
+                                <br><br>
+                                The wild, yet cool and collected, rock climber.
+                                <br><br>
+                                Rock type
+                                <br><br>
+                                Akala Island Trial Stamp
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen7/leaders/Akala_badge.png" alt="Akala Badge" id="badge">
+                            </div>
+                        </div>
+                    <div class="kahuna_content dark">
+                        <div class="b city"><p id="subt">Ula'ula Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Nanu.png" alt="Nanu">
+                            <p><span id="subt">Nanu</span>
+                                <br><br>
+                                Premier Rumble Artist
+                                <br><br>
+                                Dark type
+                                <br><br>
+                                Ula'ula Island Trial Stamp
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen7/leaders/Ula'ula_badge.png" alt="Ula'ula Badge" id="badge">
+                            </div>
+                        </div>            
+                    <div class="kahuna_content ground">
+                        <div class="b city"><p id="subt">Poni Island</p></div>
+                        <div class="b desc">
+                            <img id="sprite" src=".//images/Gen7/leaders/Spr_SM_Hapu.png" alt="Hapu">
+                            <p><span id="subt">Hapu</span>
+                                <br><br>
+                                The old growth is still in bloom!
+                                <br><br>
+                                Ground type
+                                <br><br>
+                                Poni Island Trial Stamp
+                                </p>
+                            </div>
+                            <div>
+                            <img src=".//images/Gen7/leaders/Poni_badge.png" alt="Poni Badge" id="badge">
+                            </div>
+                        </div>
+                        </div>
+                    </div>               
+                <div id="icons">
+                    <ul>
+                        <li class="kahunaClick iconbox"><img src=".//images/Gen7/leaders/VSHala.png" alt="Hala Icon" class="icon iconClick icon7 active"></li>
+                        <li class="kahunaClick iconbox"><img src=".//images/Gen7/leaders/VSOlivia.png" alt="Olivia Icon" class="icon iconClick icon7"></li>
+                        <li class="kahunaClick iconbox"><img src=".//images/Gen7/leaders/VSNanu.png" alt="Nanu Icon" class="icon iconClick icon7"></li>
+                        <li class="kahunaClick iconbox"><img src=".//images/Gen7/leaders/VSHapu.png" alt="Hapu Icon" class="icon iconClick icon7"></li>
+                        </ul>
+                    </div>
+            </section>
+        <section id="EF" class="group_content">
+                <div class="elite">
+                    <div class="elite_content desc b fighting">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen7/elite/Spr_SM_Hala.png" alt="Hala">
+                            <p><span id="subt">Hala</span>
+                                <br><br>
+                                Fighting type
+                            </div>
+                        </div>
+                    <div class="elite_content desc b rock">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen7/elite/Spr_SM_Olivia.png" alt="Olivia">
+                            <p><span id="subt">Olivia</span>
+                                <br><br>
+                                Rock type
+                            </div>
+                        </div>
+                    <div class="elite_content desc b ghost">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen7/elite/Spr_SM_Acerola.png" alt="Acerola">
+                            <p><span id="subt">Acerola</span>
+                                <br><br>
+                                Ghost type
+                            </div>
+                        </div>
+                    <div class="elite_content desc b flying">
+                        <div id="elite">
+                            <img id="sprite" src=".//images/Gen7/elite/Spr_SM_Kahili.png" alt="Kahili">
+                            <p><span id="subt">Kahili</span>
+                                <br><br>
+                                Flying type
+                            </div>
+                        </div>
+                    </div>                
+                <div id="icons">
+                    <ul>
+                        <li class="eliteClick iconbox"><img src=".//images/Gen7/elite/VSHala.png" alt="Hala Icon" class="icon iconClick icon7 ative"></li>
+                        <li class="eliteClick iconbox"><img src=".//images/Gen7/elite/VSOlivia.png" alt="Olivia Icon" class="icon iconClick icon7"></li>
+                        <li class="eliteClick iconbox"><img src=".//images/Gen7/elite/VSAcerola.png" alt="Acerola Icon" class="icon iconClick icon7"></li>
+                        <li class="eliteClick iconbox"><img src=".//images/Gen7/elite/VSKahili.png" alt="Kahili Icon" class="icon iconClick icon7"></li>
+                    </div>
+            </section>
+        </section>
+    <section class="bar">
+            <span id="bar">Locations</span>
+            </section>
+    <section class="LC">
+            <div id="locations">
+                <ul>
+                    <li><img src=".//images/Gen7/locations/Iki_Town.png" alt="Map" id="map8">
+                        <div id="city">Iki Town</div>
+                    <li><img src=".//images/Gen7/locations/Hau'oli_City.png" alt="Map" id="map">
+                        <div id="city">Hau'oli City</div>
+                    <li><img src=".//images/Gen7/locations/Heahea_City.png" alt="Map" id="map">
+                        <div id="city">Heahea City</div>
+                    <li><img src=".//images/Gen7/locations/Paniola_Town.png" alt="Map" id="map8">
+                        <div id="city">Paniola Town</div>
+                    <li><img src=".//images/Gen7/locations/Royal_Avenue.png" alt="Map" id="map8">
+                        <div id="city">Royal Avenue</div>
+                    <li><img src=".//images/Gen7/locations/Konikoni_City.png" alt="Map" id="map">
+                        <div id="city">Konikoni City</div>
+                    <li><img src=".//images/Gen7/locations/Malie_City.png" alt="Map" id="map">
+                        <div id="city">Malie City</div>
+                    <li><img src=".//images/Gen7/locations/Tapu_Village.png" alt="Map" id="map8">
+                        <div id="city">Tapu Village</div>
+                    <li><img src=".//images/Gen7/locations/Po_Town.png" alt="Map" id="map">
+                        <div id="city">Po Town</div>
+                    <li><img src=".//images/Gen7/locations/Seafolk_Village.png" alt="Map" id="map">
+                        <div id="city">Seafolk Village</div>
+                    <li><img src=".//images/Gen7/locations/Pokémon_League.png" alt="Map" id="map">
+                        <div id="city">Pokémon League</div>
+                 </div>
+            </section>
+</body>
+<footer>
+    <div>
+    <ul class="home">
+        <li ><a href="index.html">H</a></li>
+        <li><a href="gen1.html">1</a></li>
+        <li><a href="gen2.html">2</a></li>
+        <li><a href="gen3.html">3</a></li>
+        <li><a href="gen4.html">4</a></li>
+        <li><a href="gen5.html">5</a></li>
+        <li><a href="gen6.html">6</a></li>
+        <li class="active"><a href="gen7.html">7</a></li>
+        <li><a href="gen8.html">8</a></li>
+        <li><a href="gen9.html">9</a></li>
+        </ul>
+    </div>
+    <div class="home credits">
+        <p>Information sourced from <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon">Pokemon</a></p>
+        <p>Images sourced from <a href="https://bulbagarden.net/home/">Bulpapedia</a></p>
+        <p>Website created by Joy Ani</p>
+        <p>Creative Director Annie Kim</p>
+        </info>
+    </div>
+    </footer>
+</html>
